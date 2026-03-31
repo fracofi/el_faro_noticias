@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias El Faro - Inicio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background: #0b3c5d;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            height: 220px;
+            margin-right: 15px;
+        }
+
+        nav {
+            background: #1d5c85;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+        }
+
+        video {
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0b3c5d;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo_referencia.png" alt="El Faro">
+    <h1>El Faro Noticias</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="deportes.html">Deportes</a>
+    <a href="negocios.html">Negocios</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>Noticias Generales</h2>
+
+    <div class="grid">
+        <article class="card">
+            <h3>Nueva Red de Fibra Óptica</h3>
+            <p><strong>Tecnología</strong></p>
+            <p>La ciudad Coquimbo implementará una nueva red de fibra óptica para mejorar la conectividad local.</p>
+        </article>
+
+        <article class="card">
+            <h3>Festival de Otoño</h3>
+            <p><strong>Cultura</strong></p>
+            <p>Este fin de semana comienza el evento cultural más grande de la cuarta región.</p>
+        </article>
+
+        <article class="card">
+            <h3>Clima para la semana</h3>
+            <p><strong>Servicios</strong></p>
+            <p>Se esperan cielos despejados y temperaturas que bordean agradables 20 grados.</p>
+        </article>
+    </div>
+</section>
+
+<section>
+    <h2>Contenido Multimedia</h2>
+
+    <article class="card">
+        <h3>📺 Noticia en Video</h3>
+        <p>Virus azota nuevamente el continente asiático.</p>
+
+        <video controls>
+            <source src="video_noticia.mp4" type="video/mp4">
+        </video>
+    </article>
+
+    <article class="card">
+        <h3>🎧 Audio noticia</h3>
+        <p>Brutal golpisa en China.</p>
+
+        <audio controls>
+            <source src="audio_noticia.mp3" type="audio/mpeg">
+        </audio>
+    </article>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 El Faro - La luz de la información</p>
+</footer>
+
+</body>
+</html>
