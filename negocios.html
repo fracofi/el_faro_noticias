@@ -1,57 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>El Faro - Negocios</title>
-
-<style>
-body { font-family: Arial; margin:0; background:#f4f6f9;}
-header, footer { background:#0b3c5d; color:white; padding:15px;}
-nav { background:#1d5c85; padding:10px;}
-nav a { color:white; margin-right:15px; text-decoration:none;}
-main { padding:20px;}
-.card { background:white; padding:15px; border-radius:10px; margin-bottom:15px;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Negocios y Economía</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-
 <body>
 
-<header>
-<h1>Negocios</h1>
-</header>
+    <div class="notification is-success is-light has-text-centered is-marginless p-2 is-radiusless">
+        <strong>MERCADOS:</strong> Startup regional lanza paneles solares accesibles en Coquimbo.
+    </div>
 
-<nav>
-<a href="index.html">Inicio</a>
-<a href="deportes.html">Deportes</a>
-<a href="negocios.html">Negocios</a>
-</nav>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="logo_referencia.png" alt="Logo El Faro" style="max-height: 70px;">
+                    <span class="ml-3 is-size-4 has-text-weight-bold">EL FARO</span>
+                </a>
 
-<main>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-<article class="card">
-<h3>Auge de las PYMES</h3>
-<p><strong>Emprendimiento</strong></p>
-<p>Las pymes del centro de coquimbo anotaron un crecimiento del 20% en los primeros tres meses del 2026.</p>
-</article>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Inicio</a>
+                    <a class="navbar-item" href="deportes.html">Deportes</a>
+                    <a class="navbar-item" href="negocios.html">Negocios</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<article class="card">
-<h3>Taller de Economía</h3>
-<p><strong>Educación Financiera</strong></p>
-<p>Taller gratuito sobre inversiones y educación financiera se llevara a cabo en la universidad de la serena, este martes 7 de abril a las 18 hrs.</p>
-</article>
+    <main class="section">
+        <div class="container">
 
-<article class="card">
-<h3>Innovación en Energía</h3>
-<p><strong>Negocios Verdes</strong></p>
-<p>Startup regional en cooperacion con la municipalidad de coquimbo crea paneles solares accesibles para los habitantes de la región.</p>
-</article>
+            <h1 class="title">Economía y Negocios</h1>
+            <hr>
 
-</main>
+            <div class="columns">
+                <div class="column is-12">
+                    <div class="card has-background-success-light">
+                        <div class="card-content">
+                            <span class="tag is-success">Emprendimiento</span>
+                            <h2 class="title is-2 mt-2">Auge de las PYMES en el Centro de Coquimbo</h2>
+                            <p class="subtitle">Las pequeñas y medianas empresas reportan un crecimiento histórico del 20% en el primer trimestre de 2026.</p>
+                            <button class="button is-success">Ver estadísticas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<footer>
-<p>El Faro Negocios</p>
-</footer>
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="tag is-info is-light">Educación Financiera</span>
+                            <h3 class="title is-4">Taller de Economía en la ULS</h3>
+                            <p>Taller gratuito sobre inversiones se llevará a cabo en la Universidad de La Serena este martes 7 de abril a las 18:00 hrs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="tag is-info is-light">Negocios Verdes</span>
+                            <h3 class="title is-4">Innovación en Energía Solar</h3>
+                            <p>Startup local y municipalidad de Coquimbo colaboran para llevar paneles solares a sectores residenciales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h4 class="title is-5 has-text-white">El Faro Negocios</h4>
+                    <p class="has-text-grey-light">Análisis económico y noticias del mercado regional de Coquimbo.</p>
+                </div>
+                <div class="column is-4">
+                    <h4 class="title is-5 has-text-white">Navegación</h4>
+                    <ul>
+                        <li><a href="index.html" class="has-text-success">Volver al Inicio</a></li>
+                        <li><a href="deportes.html" class="has-text-success">Deportes</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h4 class="title is-5 has-text-white">Contacto Comercial</h4>
+                    <p class="has-text-grey-light">publicidad@elfaro.cl<br>Región de Coquimbo, Chile.</p>
+                </div>
+            </div>
+            <hr class="has-background-grey">
+            <div class="content has-text-centered">
+                <p>© 2026 El Faro - Taller de Aplicaciones para Internet</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

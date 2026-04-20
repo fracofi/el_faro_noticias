@@ -1,57 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>El Faro - Deportes</title>
-
-<style>
-body { font-family: Arial; margin:0; background:#f4f6f9;}
-header, footer { background:#0b3c5d; color:white; padding:15px;}
-nav { background:#1d5c85; padding:10px;}
-nav a { color:white; margin-right:15px; text-decoration:none;}
-main { padding:20px;}
-.card { background:white; padding:15px; border-radius:10px; margin-bottom:15px;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Deportes Regionales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-
 <body>
 
-<header>
-<h1>Deportes</h1>
-</header>
+    <div class="notification is-link is-light has-text-centered is-marginless p-2 is-radiusless">
+        <strong>DEPORTES:</strong> Se abren las inscripciones para la Maratón Solidaria 2026.
+    </div>
 
-<nav>
-<a href="index.html">Inicio</a>
-<a href="deportes.html">Deportes</a>
-<a href="negocios.html">Negocios</a>
-</nav>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="logo_referencia.png" alt="Logo El Faro" style="max-height: 70px;">
+                    <span class="ml-3 is-size-4 has-text-weight-bold">EL FARO</span>
+                </a>
 
-<main>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-<article class="card">
-<h3>Triunfo Local</h3>
-<p><strong>Fútbol</strong></p>
-<p>El equipo de Coquimbo ganó 3-0 el clásico regional ante deportes La Serena.</p>
-</article>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Inicio</a>
+                    <a class="navbar-item" href="deportes.html">Deportes</a>
+                    <a class="navbar-item" href="negocios.html">Negocios</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<article class="card">
-<h3>Maratón Anual</h3>
-<p><strong>Atletismo</strong></p>
-<p>Más de 500 corredores participaron en la carrera solidaria regional.</p>
-</article>
+    <main class="section">
+        <div class="container">
 
-<article class="card">
-<h3>Nuevo Centro Deportivo</h3>
-<p><strong>Infraestructura</strong></p>
-<p>Se inaugura moderno centro de alto rendimiento para deportistas de la cuarta región.</p>
-</article>
+            <h1 class="title">Actualidad Deportiva</h1>
+            <hr>
 
-</main>
+            <div class="columns">
+                <div class="column is-12">
+                    <div class="card has-background-link-light">
+                        <div class="card-content">
+                            <span class="tag is-link">Fútbol</span>
+                            <h2 class="title is-2 mt-2">¡Triunfo Histórico en el Clásico Regional!</h2>
+                            <p class="subtitle">Coquimbo Unido se impone con un contundente 3-0 ante Deportes La Serena en un estadio lleno.</p>
+                            <button class="button is-link">Leer crónica completa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<footer>
-<p>El Faro Deportes</p>
-</footer>
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="tag is-info is-light">Atletismo</span>
+                            <h3 class="title is-4">Éxito en Maratón Anual</h3>
+                            <p>Más de 500 corredores de toda la región participaron en la carrera solidaria por el borde costero.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="tag is-info is-light">Infraestructura</span>
+                            <h3 class="title is-4">Nuevo Centro de Alto Rendimiento</h3>
+                            <p>Se inauguran modernas instalaciones para deportistas de élite en la cuarta región.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h4 class="title is-5 has-text-white">El Faro Deportes</h4>
+                    <p class="has-text-grey-light">Cubriendo toda la actividad deportiva de la cuarta región y el país.</p>
+                </div>
+                <div class="column is-4">
+                    <h4 class="title is-5 has-text-white">Navegación</h4>
+                    <ul>
+                        <li><a href="index.html" class="has-text-link">Inicio</a></li>
+                        <li><a href="negocios.html" class="has-text-link">Negocios</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h4 class="title is-5 has-text-white">Contacto</h4>
+                    <p class="has-text-grey-light">deportes@elfaro.cl<br>Coquimbo, Chile.</p>
+                </div>
+            </div>
+            <hr class="has-background-grey">
+            <div class="content has-text-centered">
+                <p>© 2026 El Faro - Taller de Aplicaciones para Internet</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

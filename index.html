@@ -3,143 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias El Faro - Inicio</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-        }
-
-        header {
-            background: #0b3c5d;
-            color: white;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-        }
-
-        header img {
-            height: 220px;
-            margin-right: 15px;
-        }
-
-        nav {
-            background: #1d5c85;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin-right: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-        }
-
-        video {
-            display: block;
-            margin: 20px auto;
-            width: 400px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #0b3c5d;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Noticias El Faro - Inicio Profesional</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-
 <body>
 
-<header>
-    <img src="logo_referencia.png" alt="El Faro">
-    <h1>El Faro Noticias</h1>
-</header>
-
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="deportes.html">Deportes</a>
-    <a href="negocios.html">Negocios</a>
-</nav>
-
-<main>
-
-<section>
-    <h2>Noticias Generales</h2>
-
-    <div class="grid">
-        <article class="card">
-            <h3>Nueva Red de Fibra Óptica</h3>
-            <p><strong>Tecnología</strong></p>
-            <p>La ciudad Coquimbo implementará una nueva red de fibra óptica para mejorar la conectividad local.</p>
-        </article>
-
-        <article class="card">
-            <h3>Festival de Otoño</h3>
-            <p><strong>Cultura</strong></p>
-            <p>Este fin de semana comienza el evento cultural más grande de la cuarta región.</p>
-        </article>
-
-        <article class="card">
-            <h3>Clima para la semana</h3>
-            <p><strong>Servicios</strong></p>
-            <p>Se esperan cielos despejados y temperaturas que bordean agradables 20 grados.</p>
-        </article>
+    <div class="notification is-warning is-light has-text-centered is-marginless p-2 is-radiusless">
+        <strong>AVISO DE ÚLTIMA HORA:</strong> Coquimbo implementará nueva red de fibra óptica este mes.
     </div>
-</section>
 
-<section>
-    <h2>Contenido Multimedia</h2>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="logo_referencia.png" alt="Logo El Faro" style="max-height: 70px;">
+                    <span class="ml-3 is-size-4 has-text-weight-bold">EL FARO</span>
+                </a>
 
-    <article class="card">
-        <h3>📺 Noticia en Video</h3>
-        <p>Virus azota nuevamente el continente asiático.</p>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-        <video controls>
-            <source src="video_noticia.mp4" type="video/mp4">
-        </video>
-    </article>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Inicio</a>
+                    <a class="navbar-item" href="deportes.html">Deportes</a>
+                    <a class="navbar-item" href="negocios.html">Negocios</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <article class="card">
-        <h3>🎧 Audio noticia</h3>
-        <p>Brutal golpisa en China.</p>
+    <main class="section">
+        <div class="container">
+            <h2 class="title is-3">Portada de Hoy</h2>
+            <hr>
 
-        <audio controls>
-            <source src="audio_noticia.mp3" type="audio/mpeg">
-        </audio>
-    </article>
-</section>
+            <div class="columns">
 
-</main>
+                <div class="column is-8">
 
-<footer>
-    <p>© 2026 El Faro - La luz de la información</p>
-</footer>
+                    <div class="columns">
+                        <div class="column is-12">
+                            <article class="card has-background-link-light">
+                                <div class="card-content">
+                                    <span class="tag is-link">LO ÚLTIMO</span>
+                                    <h3 class="title is-2 mt-2">Nueva Red de Fibra Óptica en Coquimbo</h3>
+                                    <p class="subtitle is-4">La ciudad implementará tecnología de punta para mejorar la conectividad regional este 2026.</p>
+                                    <button class="button is-link">Leer más</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="columns is-multiline">
+                        <div class="column is-4">
+                            <article class="card">
+                                <div class="card-content">
+                                    <h4 class="title is-6">Triunfo Local</h4>
+                                    <p class="is-size-7">Coquimbo Unido vence 3-0 en el clásico.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="column is-4">
+                            <article class="card">
+                                <div class="card-content">
+                                    <h4 class="title is-6">Auge PYME</h4>
+                                    <p class="is-size-7">Crecimiento del 20% en el centro.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="column is-4">
+                            <article class="card">
+                                <div class="card-content">
+                                    <h4 class="title is-6">Festival Otoño</h4>
+                                    <p class="is-size-7">Cultura: Este viernes inicia el evento.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="column is-4">
+                    <div class="box">
+                        <h3 class="title is-5 has-text-link">🔥 Más visitados</h3>
+                        <ul class="is-size-6">
+                            <li class="mb-2"><a href="#">1. Bono Conectividad 2026</a></li>
+                            <li class="mb-2"><a href="#">2. Resultados del Clásico</a></li>
+                            <li class="mb-2"><a href="#">3. Clima: Alerta Costera</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="title is-4 has-text-centered">Reportes Multimedia</h3>
+            <hr>
+
+            <div class="columns is-centered">
+                <div class="column is-6">
+                    <div class="box has-background-info-light">
+                        <h4 class="title is-5">📺 Noticia en Video</h4>
+                        <p class="subtitle is-6 mb-3">Virus azota nuevamente el continente asiático.</p>
+                        <figure class="image is-21by9">
+                            <video controls style="border-radius: 8px; object-fit: cover;">
+                                <source src="video_noticia.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="column is-6">
+                    <div class="box has-background-info-light">
+                        <h4 class="title is-5">🎧 Audio Noticia</h4>
+                        <p class="subtitle is-6 mb-3">Análisis: Impacto económico en la región.</p>
+                        <div class="content has-text-centered mt-5">
+                            <audio controls style="width: 100%;">
+                                <source src="audio_noticia.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el formato de audio.
+                            </audio>
+                        </div>
+                        <p class="is-size-7 mt-4 has-text-centered has-text-grey">
+                            *Escucha el reporte completo de nuestros corresponsales.*
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h5 class="title is-5 has-text-white">EL FARO</h5>
+                    <p class="has-text-grey-light">La fuente de noticias más confiable de la cuarta región. Información veraz y al instante.</p>
+                </div>
+                <div class="column is-4">
+                    <h5 class="title is-5 has-text-white">Secciones</h5>
+                    <ul>
+                        <li><a href="index.html" class="has-text-link">Inicio</a></li>
+                        <li><a href="deportes.html" class="has-text-link">Deportes</a></li>
+                        <li><a href="negocios.html" class="has-text-link">Negocios</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h5 class="title is-5 has-text-white">Contacto</h5>
+                    <p class="has-text-grey-light">Dirección: Calle Ficticia 123, Coquimbo.</p>
+                    <p class="has-text-grey-light">Email: contacto@elfaro.cl</p>
+                </div>
+            </div>
+            <hr class="has-background-grey">
+            <div class="content has-text-centered">
+                <p>© 2026 El Faro Noticias - Proyecto Taller de Aplicaciones para Internet</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
